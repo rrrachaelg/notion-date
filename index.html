@@ -7,7 +7,7 @@
         display: flex;
         font-family: exo, sans-serif;
         font-size: 12pt;
-        color: #ff5757;
+        
         padding: 10px;
         border: 0px solid #ffffff;
         justify-content: right;
@@ -27,12 +27,16 @@
           font-weight: 300;
       }
       #date{
-          font-size:44pt;
+          font-size:54pt;
           font-weight: regular;
+      }
+      #today{
+          font-size:20pt;
+          font-weight: 300;
       }
 
       body{
-          //background-color: #000000;
+          
       }
     </style>
 </head>
@@ -63,8 +67,7 @@
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
-          <div id="weekday"> ${dayOfWeek}</div>
-          <div id="date"> ${date}</div>
+          <div id="today"> TODAY IS:</div><div id="date"> ${date}</div>
  
         <div/>
     `;
